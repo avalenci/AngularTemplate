@@ -15,12 +15,14 @@ export class DashboardComponent implements OnInit {
   public title = 'dashboard';
 
   public products = [
-    { milk: 5.99, bread: 2.99 }
+    { milk: 5.99, bread: 2.99, soap: 0.99 },
+    { milk: 1.99, bread: 2.99, soap: 3.99 },
   ]
 
   public cols = [
-    { header: 'milk', field: 'milk' },
-    { header: 'bread', field: 'bread' },
+    'milk',
+    'bread',
+    'soap'
   ];
 
   constructor(private _testService: TestService) {}
